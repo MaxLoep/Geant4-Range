@@ -58,6 +58,20 @@
 #/custom/ana/setOutFolder Test
 
 #Start a run and print progress in console
+
+#1st particle/energy/material
+/gps/particle proton
+/gps/ene/mono 14. MeV
+/custom/geo/setMat G4_Al
+/custom/ana/setOutFolder G4_Al_14MeV_p_range
+/run/printProgress 10000
+/run/beamOn 1000000
+
+#2nd particle/energy/material
+/gps/particle proton
+/gps/ene/mono 13. MeV
+/custom/geo/setMat G4_Al
+/custom/ana/setOutFolder G4_Al_13MeV_p_range
 /run/printProgress 10000
 /run/beamOn 1000000
 
