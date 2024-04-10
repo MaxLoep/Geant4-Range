@@ -146,7 +146,7 @@
 
 #Commands to use with the General Particle Source (GPS)
 /gps/particle proton     #beam particle
-/gps/position 0. 0 0      #GPS position
+/gps/position 0. 0 0.8 m      #GPS position
 /gps/direction 0 0 1     #oriented along the Z axis
 /gps/ene/type Mono       #monoenergetic:   I=E
 /gps/ene/mono 14 MeV   #sets energy for monoenergetic sources
