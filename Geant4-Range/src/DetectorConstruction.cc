@@ -699,8 +699,13 @@ void DetectorConstruction::ConstructSDandField()
   // //Score TrackLength (of protons)
   primitive = new G4PSTrackLength("TrackLength");
   // primitive ->SetFilter(protonFilter);
+<<<<<<< HEAD
   primitive ->SetFilter(deuteronFilter);
   // primitive ->SetFilter(alphaFilter);
+=======
+  // primitive ->SetFilter(deuteronFilter);
+  primitive ->SetFilter(alphaFilter);
+>>>>>>> 7ac1967709584a9ccfbc934a27fbd167a4193fb3
   // primitive ->SetFilter(neutronFilter);
 
   // //Register Filters to Scorer
