@@ -57,7 +57,7 @@ Test physics Lists. Do they work?
 #include "G4EmDNAChemistry.hh"
 #include "G4EmDNAChemistry_option1.hh"          //_option1 to _option8 available
 #include "G4EmExtraPhysics.hh"
-#include "G4EmLEPTSPhysics.hh"
+// #include "G4EmLEPTSPhysics.hh"
 #include "G4EmLowEPPhysics.hh"
 #include "G4EmPenelopePhysics.hh"
 #include "G4EmLivermorePhysics.hh"
@@ -85,7 +85,7 @@ PhysicsList::PhysicsList()
 :G4VModularPhysicsList(),
  fHadronElastic(nullptr), fHadronInelastic(nullptr),
  fIonElastic(nullptr), fIonInelastic(nullptr),
- fGammaNuclear(nullptr), fElectromagnetic(nullptr),
+//  fGammaNuclear(nullptr), fElectromagnetic(nullptr),
  fDecay(nullptr), fRadioactiveDecay(nullptr), fStopping(nullptr)
 {
   G4int verb = 0;
@@ -192,13 +192,13 @@ PhysicsList::PhysicsList()
   RegisterPhysics(fStopping);
 
   // Gamma-Nuclear Physics
-  fGammaNuclear = new GammaNuclearPhysics("gamma"); //selfwritten in include-folder
-  RegisterPhysics(fGammaNuclear);
+  // fGammaNuclear = new GammaNuclearPhysics("gamma"); //selfwritten in include-folder
+  // RegisterPhysics(fGammaNuclear);
 
   // EM physics
-  fElectromagnetic = new ElectromagneticPhysics(); //selfwritten in include-folder
+  // fElectromagnetic = new ElectromagneticPhysics(); //selfwritten in include-folder
   //fElectromagnetic = new G4EmStandardPhysics(verb);
-  RegisterPhysics(fElectromagnetic);
+  // RegisterPhysics(fElectromagnetic);
 
   // Decay
   fDecay = new G4DecayPhysics(verb);

@@ -78,7 +78,7 @@ RunAction::RunAction(DetectorConstruction* det, PrimaryGeneratorAction* prim)
     std::string fileName = "ID_" + std::to_string(pid);
 
     // Create the file
-    analysisManager->OpenFile(folderName + "/" + RootFolder + "/" + fileName);
+    analysisManager->OpenFile(folderName + "/" + RootFolder + "/" + fileName + ".root");
   }
 
   // add new units for dose
@@ -252,7 +252,7 @@ void RunAction::BeginOfRunAction(const G4Run*)
 
     // Create the file
     // analysisManager->OpenFile("Folder2/" + fileName);
-    analysisManager->OpenFile(folderName + "/" + RootFolder + "/" + fileName);
+    analysisManager->OpenFile(folderName + "/" + RootFolder + "/" + fileName + ".root");
   }
 
   //
