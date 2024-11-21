@@ -53,11 +53,7 @@
 #/custom/geo/change_d 15 cm
 #/custom/geo/change_e 15 cm
 #/custom/geo/setMat G4_AIR
-<<<<<<< HEAD
-#/custom/geo/setMat G4_GRAPHITE_POROUS
-=======
 #/custom/geo/setMat G4_GRAPHITE
->>>>>>> 7ac1967709584a9ccfbc934a27fbd167a4193fb3
 #/custom/geo/setMat G4_GRAPHITE
 #/custom/ana/setOutFolder Test
 
@@ -65,13 +61,6 @@
 
 #set particle/material
 /gps/particle deuteron
-<<<<<<< HEAD
-/custom/geo/setMat G4_GRAPHITE_POROUS
-
-#1st energy
-/gps/ene/mono 28. MeV
-/custom/ana/setOutFolder D_G4_GRAPHITE_POROUS_28MeV_range
-=======
 /custom/geo/setMat G4_GRAPHITE
 #REMEMBER TO CHANGE PRIMITIVE SCORER TO DEUTERON-TRACKING IN DETECTORCONSTRUCTION.CC!!!
 
@@ -81,7 +70,6 @@
 #1st energy
 /gps/ene/mono 28. MeV
 /custom/ana/setOutFolder D_G4_GRAPHITE_28MeV_range
->>>>>>> 7ac1967709584a9ccfbc934a27fbd167a4193fb3
 /run/printProgress 10000
 /run/beamOn 1000000
 
